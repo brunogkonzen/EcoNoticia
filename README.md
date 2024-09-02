@@ -1,3 +1,6 @@
+# Autores 📄
+Arthur Kochem, Bruno Konzen, Erick Laufer, Fabiano Charnoski e Gustavo Dalpiaz.
+
 # EcoNotifica: Seu Aliado na Gestão de Resíduos 🌍
 EcoNotifica é um aplicativo web inovador projetado para ajudar os usuários a gerenciar de forma eficiente o descarte de resíduos domésticos e eletrônicos. Focado na comunidade da Unoesc de São Miguel do Oeste, o aplicativo promove práticas sustentáveis, facilitando o processo de descarte correto tanto dentro quanto fora do campus.
 
@@ -45,6 +48,8 @@ O aplicativo é otimizado para resposta rápida, garantindo uma experiência flu
 
 **Segurança de Dados >**
 Proteção dos dados pessoais dos usuários e envio seguro de notificações.
+
+# Upgrades Futuros 🆙
 
 # Contribuição 🤝
 Se você deseja contribuir com o EcoNotifica, sinta-se à vontade para enviar pull requests ou abrir issues. Toda ajuda é bem-vinda para tornar este projeto ainda melhor.
