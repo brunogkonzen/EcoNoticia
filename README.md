@@ -49,6 +49,9 @@ O aplicativo é otimizado para resposta rápida, garantindo uma experiência flu
 **Segurança de Dados >**
 Proteção dos dados pessoais dos usuários e envio seguro de notificações.
 
+# Desenvolvimento 📂
+Para o desenvolvimento desse sistema, utilizamos o banco de dados relacional FirebirdSQL, juntamente com a ferramenta Dbeaver e IBExpert. Na parte de programação, a linguagem javaScript foi utilizada e o Node.JS para compilar no Electron com a ferramenta Visual Studio Code como ambiente de desenvolvimento para fazer a parte do *back-end*. Foram utilizado bibliotecas do node.js com o intuito de fazer a conexão com o banco de dados e para fazer os testes das requisições utilizamos o Postman. Na parte de *front-end* sera utilizado HTML com CSS e JavaScript. Por fim, no desenvolvimento dos modelos, utilizamos requisitos já levantados anteriormente junto com a ferramenta Visual Paradigm. E para fazer o versionamento do projeto, utilizamos o GitHub.
+
 # Upgrades Futuros 🆙
 
 # Contribuição 🤝
