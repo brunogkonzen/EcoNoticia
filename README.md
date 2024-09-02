@@ -25,25 +25,25 @@ Nunca esqueça de colocar o lixo para fora ou de separar os resíduos eletrônic
 Contribua para a redução do impacto ambiental e incentive uma cultura de responsabilidade social.
 
 # Objetivos do Produto 🎯
-● **Eficiência no Descarte de Resíduos**
+**Eficiência no Descarte de Resíduos >**
 Automatize e melhore a gestão do descarte de lixo.
 
-●**Promoção da Sustentabilidade**
+**Promoção da Sustentabilidade >**
 Incentive práticas sustentáveis e a reciclagem de lixo eletrônico.
 
-● **Redução de Impacto Ambiental**
+**Redução de Impacto Ambiental >**
 Diminua a quantidade de lixo mal descartado.
 
 # Instalação 🚀
 
 # Considerações de Qualidade e Segurança 🔒
-**Interface Intuitiva**
+**Interface Intuitiva >**
 Desenvolvida para ser fácil de usar, mesmo para quem não tem muita familiaridade com tecnologia.
 
-**Desempenho Rápido**
+**Desempenho Rápido >**
 O aplicativo é otimizado para resposta rápida, garantindo uma experiência fluida.
 
-**Segurança de Dados**
+**Segurança de Dados >**
 Proteção dos dados pessoais dos usuários e envio seguro de notificações.
 
 # Contribuição 🤝
