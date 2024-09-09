@@ -1,0 +1,69 @@
+-- Tabela de Usuários
+CREATE TABLE Usuario (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL
+);
+
+-- Tabela de Preferências
+CREATE TABLE Preferencias (
+    id SERIAL PRIMARY KEY,
+    notificacaoLixoDomestico BOOLEAN DEFAULT TRUE,
+    notificacaoLixoEletronico BOOLEAN DEFAULT TRUE,
+    usuario_id INT REFERENCES Usuario(id) ON DELETE CASCADE
+);
+
+-- Tabela de Relatórios
+CREATE TABLE Relatorio (
+    id SERIAL PRIMARY KEY,
+    usuario_id INT REFERENCES Usuario(id) ON DELETE CASCADE,
+    frequenciaDescarte INT,
+    conscienciaDescarte INT
+);
+
+-- Tabela de Informações Educativas
+CREATE TABLE InformacaoEducativa (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(100),
+    conteudo TEXT
+);
+
+-- Tabela de Eventos/Campanhas
+CREATE TABLE EventoCampanha (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    data TIMESTAMP NOT NULL,
+    descricao TEXT,
+    usuario_id INT REFERENCES Usuario(id) ON DELETE CASCADE
+);
+
+-- Tabela de Notificações
+CREATE TABLE Notificacao (
+    id SERIAL PRIMARY KEY,
+    tipo VARCHAR(50) NOT NULL,
+    mensagem TEXT NOT NULL,
+    dataHora TIMESTAMP NOT NULL,
+    usuario_id INT REFERENCES Usuario(id) ON DELETE CASCADE,
+    evento_id INT REFERENCES EventoCampanha(id) ON DELETE SET NULL
+);
+
+-- Tabela de Localizações
+CREATE TABLE Localizacao (
+    id SERIAL PRIMARY KEY,
+    endereco VARCHAR(200) NOT NULL,
+    horarioFuncionamento VARCHAR(100)
+);
+
+-- Relacionamento entre Notificações e Localizações (muitos para muitos)
+CREATE TABLE Notificacao_Localizacao (
+    notificacao_id INT REFERENCES Notificacao(id) ON DELETE CASCADE,
+    localizacao_id INT REFERENCES Localizacao(id) ON DELETE CASCADE,
+    PRIMARY KEY (notificacao_id, localizacao_id)
+);
+
+-- Inserção de um relacionamento entre um evento e seus usuários notificados
+CREATE TABLE Usuario_EventoCampanha (
+    usuario_id INT REFERENCES Usuario(id) ON DELETE CASCADE,
+    evento_id INT REFERENCES EventoCampanha(id) ON DELETE CASCADE,
+    PRIMARY KEY (usuario_id, evento_id)
+);
